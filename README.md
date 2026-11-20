@@ -45,7 +45,7 @@
 4. 点击 **Save**
 5. 等待 1~2 分钟，页面顶部会显示你的网址：
    ```
-   https://你的用户名.github.io/stock-trend
+   https://kemomi.github.io/stock-trend
    ```
 6. 打开这个网址即可看到股价走势图！🎉
 
@@ -77,7 +77,7 @@
 | `META`  | Meta (Facebook)    |
 | `ANT`   | Antero Resources   |
 
-> ⚠️ 注意：苹果的代码是 `AAPL`（两个 A），不是 `APPL`。
+> ⚠️ 注意：ANTHROPIC的代码是 `ANT`。
 
 ---
 
