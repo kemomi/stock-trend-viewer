@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>股价走势 · Stock Trend Viewer</title>
+  <meta name="description" content="一键查看股票实时价格与走势图。在 GitHub 仓库修改 config.json 即可切换股票代码。" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <div class="app">
+    <!-- 顶部栏 -->
+    <header class="topbar">
+      <div class="brand">
+        <span class="logo">📈</span>
+        <span class="title">股价走势</span>
+      </div>
+      <div class="status" id="status">
+        <span class="dot" id="statusDot"></span>
+        <span id="statusText">加载中…</span>
+      </div>
+    </header>
+
+    <!-- 主内容 -->
+    <main class="main">
+      <!-- 错误提示 -->
+      <div class="error-box" id="errorBox" style="display:none;">
+        <strong>⚠️ 数据获取失败</strong>
+        <p id="errorMsg"></p>
+        <p class="hint">提示：可能是 CORS 代理暂时不可用，请稍后刷新，或查看下方说明。</p>
+      </div>
+
+      <!-- 股票信息卡片 -->
+      <section class="card price-card">
+        <div class="price-header">
+          <div class="symbol-info">
+            <h1 class="symbol" id="symbol">--</h1>
+            <span class="exchange" id="exchange"></span>
+          </div>
+          <div class="price-right">
+            <div class="price" id="price">--</div>
+            <div class="change" id="change"></div>
+          </div>
+        </div>
+        <div class="price-meta">
+          <span id="currency"></span>
+          <span id="lastUpdated"></span>
+        </div>
+      </section>
+
+      <!-- 走势图 -->
+      <section class="card chart-card">
+        <div class="chart-header">
+          <h2>价格走势</h2>
+          <div class="range-buttons" id="rangeButtons">
+            <button data-range="5d">5天</button>
+            <button data-range="1mo">1月</button>
+            <button data-range="3mo" class="active">3月</button>
+            <button data-range="6mo">6月</button>
+            <button data-range="1y">1年</button>
+            <button data-range="max">全部</button>
+          </div>
+        </div>
+        <div class="chart-wrap">
+          <canvas id="priceChart"></canvas>
+        </div>
+      </section>
+
+      <!-- 详细数据 -->
+      <section class="card stats-card">
+        <h2>详细数据</h2>
+        <div class="stats-grid" id="statsGrid">
+          <div class="stat"><span class="label">开盘</span><span class="value" id="statOpen">--</span></div>
+          <div class="stat"><span class="label">最高</span><span class="value" id="statHigh">--</span></div>
+          <div class="stat"><span class="label">最低</span><span class="value" id="statLow">--</span></div>
+          <div class="stat"><span class="label">收盘</span><span class="value" id="statClose">--</span></div>
+          <div class="stat"><span class="label">成交量</span><span class="value" id="statVolume">--</span></div>
+          <div class="stat"><span class="label">前收盘</span><span class="value" id="statPrevClose">--</span></div>
+        </div>
+      </section>
+
+      <!-- 配置说明 -->
+      <section class="card config-card">
+        <h2>📋 当前配置（来自 config.json）</h2>
+        <pre class="config-display" id="configDisplay">加载中…</pre>
+        <p class="config-hint">
+          💡 在 GitHub 仓库中编辑 <code>config.json</code> 的 <code>"symbol"</code> 字段即可切换股票代码（如
+          <code>NVDA</code>、<code>AAPL</code>、<code>TSLA</code>、<code>ANT</code> 等），保存后刷新页面即可看到新股票的实时价格与走势。
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>数据来源：Yahoo Finance · 通过 CORS 代理获取 · 仅供学习参考，不构成投资建议</p>
+      <p>自动刷新间隔：<span id="refreshInfo">--</span></p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

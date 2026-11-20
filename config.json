@@ -1,0 +1,8 @@
+{
+  "symbol": "AAPL",
+  "range": "3mo",
+  "interval": "1d",
+  "refreshSeconds": 60,
+  "chartType": "line",
+  "theme": "dark"
+}

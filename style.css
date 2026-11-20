@@ -1,0 +1,221 @@
+/* ===== 全局重置 & 变量 ===== */
+:root {
+  --bg: #0d1117;
+  --bg-card: #161b22;
+  --bg-hover: #1c2330;
+  --border: #30363d;
+  --text: #e6edf3;
+  --text-dim: #8b949e;
+  --green: #3fb950;
+  --green-bg: rgba(63, 185, 80, 0.12);
+  --red: #f85149;
+  --red-bg: rgba(248, 81, 73, 0.12);
+  --blue: #58a6ff;
+  --radius: 12px;
+  --shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* ===== 布局 ===== */
+.app {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 16px 40px;
+}
+
+/* ===== 顶部栏 ===== */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 24px;
+}
+
+.brand { display: flex; align-items: center; gap: 10px; }
+.logo { font-size: 28px; }
+.title { font-size: 22px; font-weight: 700; }
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-dim);
+}
+.dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--text-dim);
+  display: inline-block;
+}
+.dot.live { background: var(--green); box-shadow: 0 0 8px var(--green); animation: pulse 2s infinite; }
+.dot.error { background: var(--red); }
+.dot.loading { background: #d29922; animation: pulse 1s infinite; }
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+/* ===== 卡片 ===== */
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  margin-bottom: 20px;
+  box-shadow: var(--shadow);
+}
+.card h2 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ===== 价格卡片 ===== */
+.price-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.symbol-info { display: flex; flex-direction: column; gap: 4px; }
+.symbol { font-size: 36px; font-weight: 800; letter-spacing: 1px; }
+.exchange { font-size: 13px; color: var(--text-dim); }
+
+.price-right { text-align: right; }
+.price { font-size: 42px; font-weight: 800; font-variant-numeric: tabular-nums; }
+.change {
+  font-size: 18px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  margin-top: 4px;
+}
+.change.up { color: var(--green); }
+.change.down { color: var(--red); }
+
+.price-meta {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+  font-size: 13px;
+  color: var(--text-dim);
+}
+
+/* ===== 走势图 ===== */
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.chart-header h2 { margin: 0; }
+.range-buttons { display: flex; gap: 6px; flex-wrap: wrap; }
+.range-buttons button {
+  background: var(--bg-hover);
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  padding: 6px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.2s;
+}
+.range-buttons button:hover { color: var(--text); border-color: var(--blue); }
+.range-buttons button.active {
+  background: var(--blue);
+  color: #fff;
+  border-color: var(--blue);
+}
+.chart-wrap { position: relative; height: 360px; }
+
+/* ===== 统计网格 ===== */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 12px;
+}
+.stat {
+  background: var(--bg-hover);
+  border-radius: 8px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.stat .label { font-size: 12px; color: var(--text-dim); }
+.stat .value { font-size: 18px; font-weight: 600; font-variant-numeric: tabular-nums; }
+
+/* ===== 配置卡片 ===== */
+.config-display {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  font-family: "SF Mono", Monaco, "Cascadia Code", "Roboto Mono", monospace;
+  font-size: 13px;
+  overflow-x: auto;
+  color: var(--blue);
+}
+.config-hint {
+  margin-top: 14px;
+  font-size: 14px;
+  color: var(--text-dim);
+  line-height: 1.7;
+}
+.config-hint code {
+  background: var(--bg-hover);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: "SF Mono", Monaco, monospace;
+  font-size: 13px;
+  color: var(--blue);
+}
+
+/* ===== 错误框 ===== */
+.error-box {
+  background: var(--red-bg);
+  border: 1px solid var(--red);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.error-box strong { color: var(--red); font-size: 16px; }
+.error-box p { margin-top: 8px; color: var(--text-dim); }
+.error-box .hint { font-size: 13px; }
+
+/* ===== 页脚 ===== */
+.footer {
+  text-align: center;
+  color: var(--text-dim);
+  font-size: 13px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+.footer p { margin: 4px 0; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .symbol { font-size: 28px; }
+  .price { font-size: 32px; }
+  .chart-wrap { height: 280px; }
+  .price-header { flex-direction: column; }
+  .price-right { text-align: left; }
+}
