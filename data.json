@@ -1,10 +1,10 @@
 {
   "symbol": "ANT",
-  "fetchedAt": "2026-11-20T08:31:36.738Z",
+  "fetchedAt": "2026-11-20T15:48:49.184Z",
   "range": "3mo",
   "interval": "1d",
-  "currentPrice": 97.17,
-  "previousClose": 83,
+  "currentPrice": 85.695,
+  "previousClose": 111.5,
   "currency": "USD",
   "exchange": "NMS",
   "yahooResult": {
@@ -14,43 +14,43 @@
       "exchangeName": "NMS",
       "fullExchangeName": "NasdaqGS",
       "instrumentType": "EQUITY",
-      "firstTradeDate": null,
-      "regularMarketTime": 1795122001,
+      "firstTradeDate": 1795098600,
+      "regularMarketTime": 1795189728,
       "hasPrePostMarketData": true,
       "gmtoffset": -18000,
       "timezone": "EST",
       "exchangeTimezoneName": "America/New_York",
-      "regularMarketPrice": 97.17,
-      "regularMarketChangePercent": 17.072,
-      "fulldayPrice": 97.17,
-      "fulldayChange": 9.6,
-      "fulldayChangePercent": 11.566,
+      "regularMarketPrice": 85.695,
+      "regularMarketChangePercent": -11.81,
+      "fulldayPrice": 85.695,
+      "fulldayChange": -11.475,
+      "fulldayChangePercent": -11.81,
       "fiftyTwoWeekHigh": 115.1,
-      "fiftyTwoWeekLow": 92.72,
-      "regularMarketDayHigh": 115.1,
-      "regularMarketDayLow": 92.72,
-      "regularMarketVolume": 851818130,
+      "fiftyTwoWeekLow": 85,
+      "regularMarketDayHigh": 92.56,
+      "regularMarketDayLow": 85,
+      "regularMarketVolume": 180408003,
       "longName": "Anthropic, PBC Class A Common Stock",
       "shortName": "Anthropic, PBC Class A Common Stock",
-      "chartPreviousClose": 83,
+      "chartPreviousClose": 111.5,
       "priceHint": 2,
       "currentTradingPeriod": {
         "pre": {
           "timezone": "EST",
-          "start": 1795165200,
           "end": 1795185000,
+          "start": 1795165200,
           "gmtoffset": -18000
         },
         "regular": {
           "timezone": "EST",
-          "start": 1795185000,
           "end": 1795208400,
+          "start": 1795185000,
           "gmtoffset": -18000
         },
         "post": {
           "timezone": "EST",
-          "start": 1795208400,
           "end": 1795222800,
+          "start": 1795208400,
           "gmtoffset": -18000
         }
       },
@@ -58,36 +58,45 @@
       "range": "3mo",
       "validRanges": [
         "1d",
-        "5d"
+        "5d",
+        "ytd",
+        "max"
       ]
     },
     "timestamp": [
-      1795098600
+      1795098600,
+      1795185000
     ],
     "indicators": {
       "quote": [
         {
           "low": [
-            92.72000122070312
+            92.72000122070312,
+            85
           ],
           "open": [
-            111.5
+            111.5,
+            89.86000061035156
           ],
           "close": [
-            97.16999816894531
+            97.16999816894531,
+            85.69499969482422
           ],
           "volume": [
-            853213200
+            853213200,
+            180408003
           ],
           "high": [
-            115.0999984741211
+            115.0999984741211,
+            92.55999755859375
           ]
         }
       ],
       "adjclose": [
         {
           "adjclose": [
-            97.16999816894531
+            97.16999816894531,
+            85.69499969482422
           ]
         }
       ]
