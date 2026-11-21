@@ -1,6 +1,6 @@
 {
   "symbol": "ANT",
-  "fetchedAt": "2026-11-20T22:25:10.561Z",
+  "fetchedAt": "2026-11-21T03:18:24.422Z",
   "range": "3mo",
   "interval": "1d",
   "currentPrice": 88.91,
@@ -22,16 +22,16 @@
       "exchangeTimezoneName": "America/New_York",
       "regularMarketPrice": 88.91,
       "regularMarketChangePercent": -8.501,
-      "fulldayPrice": 88.37,
-      "fulldayChange": -8.8,
-      "fulldayChangePercent": -9.056,
+      "fulldayPrice": 88.91,
+      "fulldayChange": -9.38,
+      "fulldayChangePercent": -9.653,
       "fiftyTwoWeekHigh": 115.1,
       "fiftyTwoWeekLow": 83.05,
       "regularMarketDayHigh": 92.56,
       "regularMarketDayLow": 83.05,
-      "regularMarketVolume": 398841359,
+      "regularMarketVolume": 399629474,
       "longName": "Anthropic, PBC Class A Common Stock",
-      "shortName": "Anthropic, PBC Class A Common Stock",
+      "shortName": "Anthropic, PBC",
       "chartPreviousClose": 111.5,
       "priceHint": 2,
       "currentTradingPeriod": {
@@ -70,25 +70,25 @@
     "indicators": {
       "quote": [
         {
+          "volume": [
+            857312300,
+            399629474
+          ],
+          "low": [
+            92.72000122070312,
+            83.05000305175781
+          ],
           "high": [
             115.0999984741211,
             92.55999755859375
-          ],
-          "open": [
-            111.5,
-            89.86000061035156
           ],
           "close": [
             97.16999816894531,
             88.91000366210938
           ],
-          "volume": [
-            857312300,
-            398841359
-          ],
-          "low": [
-            92.72000122070312,
-            83.05000305175781
+          "open": [
+            111.5,
+            89.86000061035156
           ]
         }
       ],
