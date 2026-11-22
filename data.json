@@ -1,6 +1,6 @@
 {
   "symbol": "ANT",
-  "fetchedAt": "2026-11-22T11:43:54.764Z",
+  "fetchedAt": "2026-11-22T18:43:55.390Z",
   "range": "3mo",
   "interval": "1d",
   "currentPrice": 88.91,
@@ -29,8 +29,8 @@
       "fiftyTwoWeekLow": 83.05,
       "regularMarketDayHigh": 92.56,
       "regularMarketDayLow": 83.05,
-      "regularMarketVolume": 399629474,
-      "longName": "Anthropic, PBC Class A Common Stock",
+      "regularMarketVolume": 400460284,
+      "longName": "Anthropic, PBC",
       "shortName": "Anthropic, PBC",
       "chartPreviousClose": 111.5,
       "priceHint": 2,
@@ -74,17 +74,17 @@
             111.5,
             89.86000061035156
           ],
-          "high": [
-            115.0999984741211,
-            92.55999755859375
+          "volume": [
+            857312300,
+            399561400
           ],
           "close": [
             97.16999816894531,
             88.91000366210938
           ],
-          "volume": [
-            857312300,
-            399561400
+          "high": [
+            115.0999984741211,
+            92.55999755859375
           ],
           "low": [
             92.72000122070312,
