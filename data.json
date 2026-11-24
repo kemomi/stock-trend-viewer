@@ -1,9 +1,9 @@
 {
   "symbol": "ANT",
-  "fetchedAt": "2026-11-24T12:42:32.998Z",
+  "fetchedAt": "2026-11-24T22:49:32.063Z",
   "range": "3mo",
   "interval": "1d",
-  "currentPrice": 87.64,
+  "currentPrice": 81.905,
   "previousClose": 111.5,
   "currency": "USD",
   "exchange": "NMS",
@@ -15,21 +15,21 @@
       "fullExchangeName": "NasdaqGS",
       "instrumentType": "EQUITY",
       "firstTradeDate": 1795098600,
-      "regularMarketTime": 1795467601,
+      "regularMarketTime": 1795554001,
       "hasPrePostMarketData": true,
       "gmtoffset": -18000,
       "timezone": "EST",
       "exchangeTimezoneName": "America/New_York",
-      "regularMarketPrice": 87.64,
-      "regularMarketChangePercent": -1.428,
-      "fulldayPrice": 83.07,
-      "fulldayChange": -4.57,
-      "fulldayChangePercent": -5.215,
+      "regularMarketPrice": 81.905,
+      "regularMarketChangePercent": -6.544,
+      "fulldayPrice": 81.85,
+      "fulldayChange": -5.79,
+      "fulldayChangePercent": -6.607,
       "fiftyTwoWeekHigh": 115.1,
-      "fiftyTwoWeekLow": 83.05,
-      "regularMarketDayHigh": 94.24,
-      "regularMarketDayLow": 84.65,
-      "regularMarketVolume": 253330731,
+      "fiftyTwoWeekLow": 75.61,
+      "regularMarketDayHigh": 83.49,
+      "regularMarketDayLow": 75.61,
+      "regularMarketVolume": 311641596,
       "longName": "Anthropic, PBC",
       "shortName": "Anthropic, PBC",
       "chartPreviousClose": 111.5,
@@ -59,6 +59,7 @@
       "validRanges": [
         "1d",
         "5d",
+        "1mo",
         "ytd",
         "max"
       ]
@@ -66,35 +67,41 @@
     "timestamp": [
       1795098600,
       1795185000,
-      1795444200
+      1795444200,
+      1795530600
     ],
     "indicators": {
       "quote": [
         {
+          "low": [
+            92.72000122070312,
+            83.05000305175781,
+            84.61000061035156,
+            75.61000061035156
+          ],
           "volume": [
             857312300,
             400460300,
-            253624200
-          ],
-          "close": [
-            97.16999816894531,
-            88.91000366210938,
-            87.63999938964844
+            254101700,
+            311641596
           ],
           "open": [
             111.5,
             89.86000061035156,
-            93.6500015258789
+            93.6500015258789,
+            83.44000244140625
+          ],
+          "close": [
+            97.16999816894531,
+            88.91000366210938,
+            87.63999938964844,
+            81.90499877929688
           ],
           "high": [
             115.0999984741211,
             92.55999755859375,
-            94.23999786376953
-          ],
-          "low": [
-            92.72000122070312,
-            83.05000305175781,
-            84.61000061035156
+            94.23999786376953,
+            83.48999786376953
           ]
         }
       ],
@@ -103,7 +110,8 @@
           "adjclose": [
             97.16999816894531,
             88.91000366210938,
-            87.63999938964844
+            87.63999938964844,
+            81.90499877929688
           ]
         }
       ]
