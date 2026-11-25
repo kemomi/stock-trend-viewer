@@ -1,6 +1,6 @@
 {
   "symbol": "ANT",
-  "fetchedAt": "2026-11-24T22:49:32.063Z",
+  "fetchedAt": "2026-11-25T05:06:13.985Z",
   "range": "3mo",
   "interval": "1d",
   "currentPrice": 81.905,
@@ -22,9 +22,9 @@
       "exchangeTimezoneName": "America/New_York",
       "regularMarketPrice": 81.905,
       "regularMarketChangePercent": -6.544,
-      "fulldayPrice": 81.85,
-      "fulldayChange": -5.79,
-      "fulldayChangePercent": -6.607,
+      "fulldayPrice": 79.64,
+      "fulldayChange": -8,
+      "fulldayChangePercent": -9.128,
       "fiftyTwoWeekHigh": 115.1,
       "fiftyTwoWeekLow": 75.61,
       "regularMarketDayHigh": 83.49,
@@ -37,20 +37,20 @@
       "currentTradingPeriod": {
         "pre": {
           "timezone": "EST",
-          "start": 1795510800,
-          "end": 1795530600,
+          "start": 1795597200,
+          "end": 1795617000,
           "gmtoffset": -18000
         },
         "regular": {
           "timezone": "EST",
-          "start": 1795530600,
-          "end": 1795554000,
+          "start": 1795617000,
+          "end": 1795640400,
           "gmtoffset": -18000
         },
         "post": {
           "timezone": "EST",
-          "start": 1795554000,
-          "end": 1795568400,
+          "start": 1795640400,
+          "end": 1795654800,
           "gmtoffset": -18000
         }
       },
@@ -73,29 +73,29 @@
     "indicators": {
       "quote": [
         {
+          "volume": [
+            857312300,
+            400460300,
+            254101700,
+            312136500
+          ],
+          "open": [
+            111.5,
+            89.86000061035156,
+            93.6500015258789,
+            83.4000015258789
+          ],
           "low": [
             92.72000122070312,
             83.05000305175781,
             84.61000061035156,
             75.61000061035156
           ],
-          "volume": [
-            857312300,
-            400460300,
-            254101700,
-            311641596
-          ],
-          "open": [
-            111.5,
-            89.86000061035156,
-            93.6500015258789,
-            83.44000244140625
-          ],
           "close": [
             97.16999816894531,
             88.91000366210938,
             87.63999938964844,
-            81.90499877929688
+            81.91000366210938
           ],
           "high": [
             115.0999984741211,
@@ -111,7 +111,7 @@
             97.16999816894531,
             88.91000366210938,
             87.63999938964844,
-            81.90499877929688
+            81.91000366210938
           ]
         }
       ]
