@@ -1,6 +1,6 @@
 {
   "symbol": "ANT",
-  "fetchedAt": "2026-11-25T23:50:02.584Z",
+  "fetchedAt": "2026-11-26T05:36:58.834Z",
   "range": "3mo",
   "interval": "1d",
   "currentPrice": 82.79,
@@ -22,35 +22,35 @@
       "exchangeTimezoneName": "America/New_York",
       "regularMarketPrice": 82.79,
       "regularMarketChangePercent": 1.081,
-      "fulldayPrice": 83.92,
-      "fulldayChange": 2.015,
-      "fulldayChangePercent": 2.46,
+      "fulldayPrice": 82.79,
+      "fulldayChange": 2.345,
+      "fulldayChangePercent": 2.863,
       "fiftyTwoWeekHigh": 115.1,
       "fiftyTwoWeekLow": 73.85,
       "regularMarketDayHigh": 85.918,
       "regularMarketDayLow": 73.85,
       "regularMarketVolume": 292331215,
-      "longName": "Anthropic, PBC",
+      "longName": "Anthropic, PBC Class A Common Stock",
       "shortName": "Anthropic, PBC",
       "chartPreviousClose": 111.5,
       "priceHint": 2,
       "currentTradingPeriod": {
         "pre": {
           "timezone": "EST",
-          "start": 1795597200,
           "end": 1795617000,
+          "start": 1795597200,
           "gmtoffset": -18000
         },
         "regular": {
           "timezone": "EST",
-          "start": 1795617000,
           "end": 1795640400,
+          "start": 1795617000,
           "gmtoffset": -18000
         },
         "post": {
           "timezone": "EST",
-          "start": 1795640400,
           "end": 1795654800,
+          "start": 1795640400,
           "gmtoffset": -18000
         }
       },
@@ -74,26 +74,12 @@
     "indicators": {
       "quote": [
         {
-          "high": [
-            115.0999984741211,
-            92.55999755859375,
-            94.23999786376953,
-            83.48999786376953,
-            85.91780090332031
-          ],
           "open": [
             111.5,
             89.86000061035156,
             93.6500015258789,
             83.4000015258789,
             77.93000030517578
-          ],
-          "low": [
-            92.72000122070312,
-            83.05000305175781,
-            84.61000061035156,
-            75.61000061035156,
-            73.8499984741211
           ],
           "close": [
             97.16999816894531,
@@ -102,12 +88,26 @@
             81.91000366210938,
             82.79000091552734
           ],
+          "low": [
+            92.72000122070312,
+            83.05000305175781,
+            84.61000061035156,
+            75.61000061035156,
+            73.8499984741211
+          ],
+          "high": [
+            115.0999984741211,
+            92.55999755859375,
+            94.23999786376953,
+            83.48999786376953,
+            85.91999816894531
+          ],
           "volume": [
             857312300,
             400460300,
             254101700,
             313046200,
-            292331215
+            292752600
           ]
         }
       ],
